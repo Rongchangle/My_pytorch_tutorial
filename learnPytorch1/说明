@@ -1,0 +1,9 @@
+这是我学习pytorch的第一个工程,主要是pytorch的一些最最简单的语法(宣布tensor,对tensor进行操作,tensor和numpy的转化,autograd包,backward()求导)
+同时实现了一个最简单的CNN神经网络(最简单的模型,loss函数,训练方法)
+
+
+What_is_pytorch.py是关于tensor最简单的操作(宣布,加法)
+autogradLearning.py是autogradLearning属性(求导等)
+neural_networks.py是定义一个简单CNN,并且还有关于这个net的相关参数等
+clean_networks.py和上面文件的CNN一样的,不过更加干净(意思是不会挖掘net的相关参数等)
+t1.py这个文件纯粹是个语法测试文件,不用管...
