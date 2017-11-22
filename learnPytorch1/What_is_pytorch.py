@@ -22,7 +22,9 @@ print(x2)
 
 
 #2. tensor基本初始化
-a = torch.Tensor([1,2,3,4,5])
+a = torch.Tensor([[1,2,3,4,5],[2,3,4,5,6]])
+print(a[0,1]) #访问某个值,输出2
+print(a[1]) #访问,输出好像是2,3,4,5,6
 a = torch.randn(5,3)
 a = torch.zeros(5, 3)
 a = torch.ones(5, 3)
