@@ -1,3 +1,12 @@
+本代码功能:
+1. 把一堆图片打包成为csv文件并且保存(creat_landmark_dataset.py)
+2. 读取csv文件,并且把图片经过预处理(改变大小,随机裁剪,转变numpy格式)后输出(甚至可以打乱以batch形式输出)
+其中read_landmark_dataset.py是简单的类(不经过预处理,可以返回csv图片)  read_landmark_dataset2.py(则用了预处理图片方法,并且可以每次打乱以batch形式输出)
+
+
+本代码几乎完全来自:pytorch官网新手教程的 Data Loading and Processing Tutorial
+http://pytorch.org/tutorials/beginner/data_loading_tutorial.html
+
 CSV是什么: Comma Separate Values (comma是逗号的意思)
 具体文件格式:
 1.每条记录占一行
@@ -20,8 +29,3 @@ packages:
 2. scikit-image: 图片io和传输?   scikit(读音,赛克)
 
 
-
-本代码功能:
-1. 把一堆图片打包成为csv文件并且保存(creat_landmark_dataset.py)
-2. 读取csv文件,并且把图片经过预处理(改变大小,随机裁剪,转变numpy格式)后输出(甚至可以打乱以batch形式输出)
-其中read_landmark_dataset.py是简单的类(不经过预处理,可以返回csv图片)  read_landmark_dataset2.py(则用了预处理图片方法,并且可以每次打乱以batch形式输出)
