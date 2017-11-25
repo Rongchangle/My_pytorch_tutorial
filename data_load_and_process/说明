@@ -1,0 +1,27 @@
+CSV是什么: Comma Separate Values (comma是逗号的意思)
+具体文件格式:
+1.每条记录占一行
+2.以逗号为分隔符
+3.逗号前后的空格会被忽略
+4.第一条记录可以是字段名
+更多: https://zhidao.baidu.com/question/44262381.html
+
+
+
+本代码制作的CSV文件格式如下:
+image_name,part_0_x,part_0_y,part_1_x,part_1_y,part_2_x, ... ,part_67_x,part_67_y
+0805personali01.jpg,27,83,27,98, ... 84,134
+1084239450_e76e00b7e7.jpg,70,236,71,257, ... ,128,312
+...
+
+
+packages:
+1. pandas: 更简单的csv分析
+2. scikit-image: 图片io和传输?   scikit(读音,赛克)
+
+
+
+本代码功能:
+1. 把一堆图片打包成为csv文件并且保存(creat_landmark_dataset.py)
+2. 读取csv文件,并且把图片经过预处理(改变大小,随机裁剪,转变numpy格式)后输出(甚至可以打乱以batch形式输出)
+其中read_landmark_dataset.py是简单的类(不经过预处理,可以返回csv图片)  read_landmark_dataset2.py(则用了预处理图片方法,并且可以每次打乱以batch形式输出)
