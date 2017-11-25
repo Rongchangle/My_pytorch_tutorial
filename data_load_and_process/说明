@@ -7,6 +7,9 @@
 本代码几乎完全来自:pytorch官网新手教程的 Data Loading and Processing Tutorial
 http://pytorch.org/tutorials/beginner/data_loading_tutorial.html
 
+
+注意: 本代码需要下载dlib特征点检测的相关文件才能运行,如何下载在creat_XXX.py有说明....
+
 CSV是什么: Comma Separate Values (comma是逗号的意思)
 具体文件格式:
 1.每条记录占一行
